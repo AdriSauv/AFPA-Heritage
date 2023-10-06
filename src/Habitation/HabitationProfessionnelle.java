@@ -11,7 +11,7 @@ public class HabitationProfessionnelle extends Habitation {
 	@Override
     public double Impot() {
         double impotBase = 0;
-        if (NbEmployes > 0) {
+        if (NbEmployes >= 10) {
             impotBase = (NbEmployes / 10) * 1000;
         }
         return impotBase + super.Impot();

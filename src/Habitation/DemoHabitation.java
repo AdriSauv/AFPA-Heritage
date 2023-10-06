@@ -26,8 +26,8 @@ public class DemoHabitation {
         maison2.Affiche();
         System.out.println("Montant de l'impôt : " + maison2.Impot() + " euros");
         
-        HabitationProfessionnelle entreprise1 = new HabitationProfessionnelle("Apple .co", "789 Boulevard Entreprise", 500.0, 15);
-        HabitationProfessionnelle entreprise2 = new HabitationProfessionnelle("Google .org", "101 Rue Technologie", 750.0, 8);
+        HabitationProfessionnelle entreprise1 = new HabitationProfessionnelle("Apple .co", "789 Boulevard Entreprise", 500.0, 40);
+        HabitationProfessionnelle entreprise2 = new HabitationProfessionnelle("Google .org", "101 Rue Technologie", 750.0, 9);
 
         
         System.out.println("\nEntreprise 1 :");
