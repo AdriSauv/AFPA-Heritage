@@ -3,16 +3,16 @@ package Habitation;
 public class DemoHabitation {
 	public static void main(String[] args) {
         
-        Habitation habitation1 = new Habitation("Adrien Sauvage", "142 Rue Emile Zola", 89.3);
-        Habitation habitation2 = new Habitation("Agustina Solimando", "456 Avenue Principale", 75.2);
+		HabitationIndividuelle maison1 = new HabitationIndividuelle("Adrien Sauvage", "123 Rue de la Maison", 150.0, 4, true);
+        HabitationIndividuelle maison2 = new HabitationIndividuelle("Agustina Solimando", "123 Avenue Maison", 120.0, 3, false);
 
         
-        System.out.println("Habitation 1 :");
-        habitation1.Affiche();
-        System.out.println("Montant de l'impôt : " + habitation1.Impot() + " euros");
+        System.out.println("Maison 1 :");
+        maison1.Affiche();
+        System.out.println("Montant de l'impôt : " + maison1.Impot() + " euros");
 
-        System.out.println("\nHabitation 2 :");
-        habitation2.Affiche();
-        System.out.println("Montant de l'impôt : " + habitation2.Impot() + " euros");
+        System.out.println("\nMaison 2 :");
+        maison2.Affiche();
+        System.out.println("Montant de l'impôt : " + maison2.Impot() + " euros");
     }
 }
