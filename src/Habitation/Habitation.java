@@ -28,10 +28,5 @@ public class Habitation {
         System.out.println("Adresse : " + adresse);
         System.out.println("Surface : " + surface + " m²");
     }
-	
-	
-    
-    
-    
-    
+
 }

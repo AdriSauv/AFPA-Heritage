@@ -37,5 +37,21 @@ public class DemoHabitation {
         System.out.println("\nEntreprise 2 :");
         entreprise2.Affiche();
         System.out.println("Montant de l'impôt : " + entreprise2.Impot() + " euros");
-    }
+        
+        
+        Habitation[] habitations = new Habitation[4];
+        habitations[0] = new HabitationIndividuelle("Shakira", "123 Rue de la Maison", 420, 4, true);
+        habitations[1] = new HabitationIndividuelle("John Mayer", "456 Avenue Maisonnette", 198.0, 3, false);
+        habitations[2] = new HabitationProfessionnelle("Apple .co", "789 Boulevard Entreprise", 500.0, 40);
+        habitations[3] = new HabitationProfessionnelle("Google .org", "101 Rue Technologie", 750.0, 9);
+    
+        double impotTotal = 0;
+        for (int i = 0; i < habitations.length; i++) {
+            impotTotal += habitations[i].Impot();
+        }
+        
+        System.out.println("\nImpôt total pour toutes les habitations : " + impotTotal + " euros");
+	
+	}
+	
 }
